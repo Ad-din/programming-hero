@@ -1,0 +1,21 @@
+.buddyShower{
+    display:grid;
+    grid-template-columns: repeat(3,fr);
+};
+#countries{
+    display:grid;
+    grid-template-columns: repeat(3,fr); 
+}
+.data{
+    border: 2px solid tomato;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+div{
+    display: grid;
+    grid-template-columns: repeat(3,fr);
+}
+p{
+    background-color: blue;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-3xl text-center text-purple-300">Banking Site</h1>
+    <main>
+        <section>
+            <div class="grid grid-cols-3 gap-4 ">
+                <div  class="text-3xl bg-blue-400 p-8 rounded m-5 text-white">
+                    <h3>Deposit</h3>
+                    <h4 >$<span id="dep-bal" >00</span> </h4>
+                </div>
+                <div class="text-3xl bg-red-400 p-8 rounded m-5 text-white">
+                    <h3 >Withdraw</h3>
+                    <h4 >$<span id="with-bal" >00</span> </h4>
+                </div>
+                <div class="text-3xl bg-orange-400 p-8 rounded m-5 text-white">
+                    <h3 >Balance</h3>
+                    <h4 >$<span id="total-bal" >50</span> </h4>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="grid grid-cols-3 gap-4">
+                <div class="m-10 bg-yellow-300 p-8 rounded">
+                    <input id="dep-input" class="p-2 rounded" type="text" class="" placeholder="Enter amount to Deposit">
+                    <button id="dep-btn" class="bg-white 600 ml-5 p-0.5 rounded py-1 px-1" style="border:black 2px solid;font-style: italic;" >Deposit</button>
+                  </div> 
+                  <div class="m-10 bg-violet-300 p-8 rounded">
+                    <input id="with-inp" class="p-2 rounded" type="text" placeholder="Enter amount to withdraw">
+                    <button id="with-btn" class="bg-white 600 ml-2 p-0.5 rounded py-1 px-1" style="border:black 2px solid;">Withdraw</button>
+                  </div>
+            </div>
+         
+        </section>
+    </main>
+    <script src="bank.js"></script>
+</body>
+</html>
